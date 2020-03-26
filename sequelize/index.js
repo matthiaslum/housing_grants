@@ -7,7 +7,7 @@ const sequelize = new Sequelize({
     port: 3306,
     username: 'root',
     dialect: 'mysql',
-    password: 'Shotput12?',
+    password: 'password',
     database: 'housing-grants',
     define: {
     createdAt: false,
