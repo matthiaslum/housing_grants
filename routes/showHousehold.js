@@ -36,6 +36,6 @@ router.get('/api/showhousehold', async function(req, res, next){
         res.status(404).send(err);
         res.end;
     }
-    })
+})
 
 module.exports = router;    

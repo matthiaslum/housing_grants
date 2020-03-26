@@ -26,10 +26,10 @@ router.get('/api/allhouseholds', async function(req, res, next){
         console.log("All houses are...");
         var output = new Array();
         for (idx in houses){
-        house_id = houses[idx].h_id;
-        let household_details = await fetch('http://localhost:1330/api/showhousehold?house='+String(house_id)).then(function(resp){return resp.json()}, new_transaction);
-        console.log("Household details:", household_details);
-        output.push(household_details);
+            house_id = houses[idx].h_id;
+            let household_details = await fetch('http://localhost:1330/api/showhousehold?house='+String(house_id)).then(function(resp){return resp.json()}, new_transaction);
+            console.log("Household details:", household_details);
+            output.push(household_details);
         }
         console.log("output", output);
     
@@ -42,6 +42,6 @@ router.get('/api/allhouseholds', async function(req, res, next){
         res.status(404).send(err);
         res.end;
     }
-    })
+})
 
 module.exports = router;        

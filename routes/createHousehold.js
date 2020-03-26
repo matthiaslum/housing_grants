@@ -23,7 +23,7 @@ router.post('/api/createhousehold', async function(req, res, next){
     try{
         var house_type = convertHouseType(req.body.house_type);
         if (house_type == null){
-        throw(" Not a valid housing type! Housing types are 'Landed', 'Condominium', or 'HDB' ")
+            throw(" Not a valid housing type! Housing types are 'Landed', 'Condominium', or 'HDB' ")
         }
         let created = await Household.create({housing_type: house_type, transaction});
         var house_number = await created.h_id;
@@ -37,6 +37,6 @@ router.post('/api/createhousehold', async function(req, res, next){
         res.status(404).send(err);
         res.end;
     }
-    })
+})
 
 module.exports = router;    
