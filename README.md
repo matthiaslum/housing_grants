@@ -7,4 +7,10 @@ Instructions to install:
 4. Create a new schema named 'housing-grants'
 5. Upon npm run start, the database connection will be established/authenticated and the tables will be created by Sequelize.
 
+Accessing the endpoints:
+Postman scripts have been uploaded too, giving a sample of how to send HTTP requests. 
 
+Sample Data:
+mysql table data has been uploaded. You can load it into mysql workbench to prevent manual entry of data.
+
+Assumptions about the assignment.
