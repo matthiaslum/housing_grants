@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "95d7b79e-5913-499f-828c-c080505da785",
+		"name": "GovTech Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Household",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"house_type\": \"HDB\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1330/api/createhousehold",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1330",
+					"path": [
+						"api",
+						"createhousehold"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"house_number\":\t2,\n\t\"name\": \"queen_third_child\", \n\t\"gender\": \"male\",\n\t\"marital_status\": \"single\",\n\t\"occupation\": \"Unemployed\",\n\t\"income\": 0,\n\t\"bday\": \"2017-11-16\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1330/api/addmember",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1330",
+					"path": [
+						"api",
+						"addmember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Households",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1330/api/allhouseholds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1330",
+					"path": [
+						"api",
+						"allhouseholds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Household",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1330/api/showhousehold?house=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1330",
+					"path": [
+						"api",
+						"showhousehold"
+					],
+					"query": [
+						{
+							"key": "house",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grant Qualifying Households",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1330/api/grants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1330",
+					"path": [
+						"api",
+						"grants"
+					],
+					"query": [
+						{
+							"key": "housetype",
+							"value": "hdb",
+							"disabled": true
+						},
+						{
+							"key": "totalincome",
+							"value": "200000",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
