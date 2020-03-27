@@ -1,0 +1,7 @@
+[{"h_id":1, "housing_type":"L", "size":5, "total_income":30000.0, "n_couples":2},
+ {"h_id":2, "housing_type":"C", "size":3, "total_income":60000.0, "n_couples":1},
+ {"h_id":3, "housing_type":"H", "size":1, "total_income":0.0, "n_couples":0},
+ {"h_id":4, "housing_type":"L", "size":2, "total_income":60000.0, "n_couples":1},
+ {"h_id":5, "housing_type":"H", "size":1, "total_income":0.0, "n_couples":0},
+ {"h_id":6, "housing_type":"C", "size":1, "total_income":0.0, "n_couples":0},
+ {"h_id":7, "housing_type":"H", "size":2, "total_income":500000.0, "n_couples":0}]
