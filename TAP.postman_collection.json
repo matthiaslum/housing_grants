@@ -53,7 +53,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"house_number\":\t2,\n\t\"name\": \"queen_third_child\", \n\t\"gender\": \"male\",\n\t\"marital_status\": \"single\",\n\t\"occupation\": \"Unemployed\",\n\t\"income\": 0,\n\t\"bday\": \"2017-11-16\"\n}"
+					"raw": "{\n\t\"house_number\":\t4,\n\t\"name\": \"mama tan\", \n\t\"gender\": \"female\",\n\t\"marital_status\": \"married\",\n\t\"occupation\": \"employed\",\n\t\"income\": 30000,\n\t\"spouse\": \"papa tan\",\n\t\"bday\": \"1985-03-11\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:1330/api/addmember",
