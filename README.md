@@ -31,7 +31,7 @@ mysql table data has been uploaded. You can load it into mysql workbench to avoi
 4. All results will come with a housing ID (h_id) or member ID (m_id), which are the primary keys.
 5. Age of members are with respect to the current Sequelize.NOW date.
 6. For the endpoint on grant disbursement, it returns a json containing the households qualifying for each of the 5 grants.
-   **I took 'qualifying members' to mean that we want to see only the members who contributed to the requirements of the grants.** Take the Student Encouragement Bonus for example, only the children (<16 YO) of the households are shown. Likewise for Family Togetherness, only the children and members who are living with their spouses are shown. The exception is the YOLO GST Grant which returns all members of the household. 
+   **I took 'qualifying members' to mean that we want to see only the members who contributed to the requirements of the grants.** Take the Student Encouragement Bonus for example, only the children (<16 YO) of the households are shown. Likewise for Family Togetherness, only the children and members who are living with their spouses are shown. **Members contributing to income are not shown, to allow focus on the children, elderly and couples**. The exception is the YOLO GST Grant which returns all members of the household. 
 7. The housing grant endpoint accepts three search parameters: Household size, Total income and Type of Housing.
    It returns only households whoze size and income **are less than the specified params**, and fits the type of housing. 
    These are additional search criteria to the existing grant requirements.
