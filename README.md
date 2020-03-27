@@ -11,10 +11,13 @@ javascript, mysql, sequelize, node.js, express
 5. Upon npm run start, the database connection will be established/authenticated and the tables will be created by Sequelize.
 
 ## Accessing the endpoints:
-Postman scripts have been uploaded too, giving a sample of how to send HTTP requests. 
+Postman scripts ("TAP.postman_collection.json") have been uploaded too, giving a sample of how to send HTTP requests. 
+
 
 ## Sample Data:
 mysql table data has been uploaded. You can load it into mysql workbench to avoid manual entry of data.
+There are two tables. Households and Members.
+Upon running the server, right click the relevant tables in mysql workbench and initialize the data import wizard. 
 
 ## Assumptions about the assignment.
 
