@@ -1,0 +1,160 @@
+
+{
+	"house_number":	1,
+	"name": "Jack Junior", 
+	"gender": "male",
+	"occupation": "Student",
+	"marital_status": "single",
+	"income": 0,
+	"bday": "2015-01-11"
+}
+
+
+{
+	"house_number":	1,
+	"name": "Jack Senior", 
+	"gender": "male",
+	"occupation": "employed",
+	"marital_status": "married",
+	"income": 20000,
+	"bday": "1964-02-02",
+	"spouse": "Lucy"
+}
+
+{
+	"house_number":	1,
+	"name": "Lucy", 
+	"gender": "female",
+	"occupation": "employed",
+	"marital_status": "married",
+	"income": 10000,
+	"bday": "1974-02-14",
+	"spouse": "Jack Senior"
+}
+
+{
+	"house_number":	3,
+	"name": "Grandpa Joe", 
+	"gender": "male",
+	"occupation": "unemployed",
+	"marital_status": "single",
+	"bday": "1974-02-14"
+}
+
+{
+	"house_number":	2,
+	"name": "baby tan", 
+	"gender": "female",
+	"occupation": "unemployed",
+	"marital_status": "single",
+	"bday": "2005-04-18"
+}
+
+{
+	"house_number":	2,
+	"name": "papa tan", 
+	"gender": "male",
+	"occupation": "employed",
+	"marital_status": "married",
+	"bday": "1985-04-20",
+	"spouse": "mama tan",
+	"income": 30000
+}
+
+{
+	"house_number":	2,
+	"name": "mama tan", 
+	"gender": "female",
+	"occupation": "employed",
+	"marital_status": "married",
+	"bday": "1985-03-11",
+	"spouse": "mama tan",
+	"income": 30000
+}
+
+{
+	"house_number":	4,
+	"name": "Jasmine", 
+	"gender": "female",
+	"occupation": "employed",
+	"marital_status": "married",
+	"bday": "1986-11-12",
+	"spouse": "Marcus",
+	"income": 30000
+}
+
+{
+	"house_number":	4,
+	"name": "Marcus", 
+	"gender": "male",
+	"occupation": "employed",
+	"marital_status": "married",
+	"bday": "1980-04-03",
+	"spouse": "Jasmine",
+	"income": 30000
+}
+{
+	"house_number":	5,
+	"name": "youngest", 
+	"gender": "male",
+	"occupation": "unemployed",
+	"marital_status": "single",
+	"bday": "2015-05-11",
+	"spouse": null,
+	"income": 0
+}
+
+{
+	"house_number":	6,
+	"name": "Mayer", 
+	"gender": "male",
+	"occupation": "unemployed",
+	"marital_status": "single",
+	"bday": "1975-05-11",
+	"spouse": null,
+	"income": 0
+}
+
+{
+	"house_number":	7,
+	"name": "Rich Man", 
+	"gender": "male",
+	"occupation": "Employed",
+	"marital_status": "single",
+	"bday": "1970-04-03",
+	"spouse": null,
+	"income": 500000
+}
+
+{
+	"house_number":	7,
+	"name": "Rich Man's Son", 
+	"gender": "male",
+	"occupation": "Unemployed",
+	"marital_status": "single",
+	"bday": "2019-03-02",
+	"spouse": null,
+	"income": 0
+}
+
+{
+	"house_number":	1,
+	"name": "Grandpa", 
+	"gender": "male",
+	"occupation": "Unemployed",
+	"marital_status": "married",
+	"bday": "1930-02-02",
+	"spouse": "Grandma",
+	"income": 0
+}
+
+{
+	"house_number":	1,
+	"name": "Grandma", 
+	"gender": "male",
+	"occupation": "unemployed",
+	"marital_status": "married",
+	"income": 0,
+	"spouse": "Grandpa",
+	"bday": "1932-04-11"
+}
