@@ -152,6 +152,17 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "deleteHousehold",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
