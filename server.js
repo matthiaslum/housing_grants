@@ -9,6 +9,8 @@ const addMemberRouter = require("./routes/addMember.js");
 const listHouseholdsRouter = require("./routes/listHouseholds.js");
 const showHouseholdRouter = require("./routes/showHousehold.js");
 const grantsRouter = require("./routes/grants.js");
+const deleteHouseRouter = require("./routes/deleteHousehold.js");
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -24,6 +26,8 @@ app.use('/', addMemberRouter);
 app.use('/', listHouseholdsRouter);
 app.use('/', showHouseholdRouter);
 app.use('/', grantsRouter);
+app.use('/', deleteHouseRouter);
+
 
 app.listen(1330);
 
