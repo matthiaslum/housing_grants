@@ -18,7 +18,7 @@ mysql table data has been uploaded. You can load it into mysql workbench to avoi
 1. In creating the households or adding members, the controllers expect the request body to contain the full spelling of the housing type, gender, marital status or occupation type. 
 
 2. We assume only two genders (male and female), and two marital statuses (single and married)
-3. To reduce storage space, we store all enum types as characters. 
+3. To reduce storage space, we store all enum types as characters because Sequelize does not support mysql enum type. 
     <br/> HouseholdType:  'L' --> 'Landed',     'C' --> 'Condominium', 'H' --> 'HDB'
     <br/>  Gender:         'M' --> 'Male',       'F' --> 'Female'
     <br/>  Marital:        'S' --> 'Single',     'M' --> 'Married'
