@@ -1,6 +1,9 @@
 # Housing_Grants
 
-Instructions to install:
+## Language and Frameworks
+javascript, mysql, sequelize, node.js, express
+
+## Instructions to install:
 1. Git clone the files to a folder.
 2. npm install to install the dependencies.
 3. Open mySQL workbench and create a connection using 'localhost', port 3306, username: 'root', password: 'password'.
