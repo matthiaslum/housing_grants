@@ -1,0 +1,15 @@
+"m_id";"name";"gender";"marital_status";"spouse";"occupation_t";"income";"bday";"living_w_spouse";"h_id"
+1;"Jack Junior";"M";"S";"";"S";0.0;"2015-01-11";0;1
+2;"Jack Senior";"M";"M";"Lucy";"E";20000.0;"1964-02-02";1;1
+3;"Lucy";"F";"M";"Jack Senior";"E";10000.0;"1974-02-14";1;1
+4;"Grandpa Joe";"M";"S";"";"U";0.0;"1974-02-14";0;3
+5;"baby tan";"F";"S";"";"U";0.0;"2005-04-18";0;2
+6;"papa tan";"M";"M";"mama tan";"E";30000.0;"1985-04-20";1;2
+7;"mama tan";"F";"M";"papa tan";"E";30000.0;"1985-03-11";1;2
+8;"Jasmine";"F";"M";"Marcus";"E";30000.0;"1986-11-12";1;4
+9;"Marcus";"M";"M";"Jasmine";"E";30000.0;"1980-04-03";1;4
+10;"youngest";"M";"S";"";"U";0.0;"2015-05-11";0;5
+11;"Mayer";"M";"S";"";"U";0.0;"1975-05-11";0;6
+12;"Rich Man";"M";"S";"";"E";500000.0;"1970-04-03";0;7
+13;"Rich Man's Son";"M";"S";"";"U";0.0;"2019-03-02";0;7
+14;"Grandpa";"M";"M";"Grandma";"U";0.0;"1930-02-02";0;1
