@@ -19,11 +19,11 @@ mysql table data has been uploaded. You can load it into mysql workbench to avoi
 
 2. We assume only two genders (male and female), and two marital statuses (single and married)
 3. To reduce storage space, we store all enum types as characters. 
-    HouseholdType:  'L' --> 'Landed',     'C' --> 'Condominium', 'H' --> 'HDB'
-    Gender:         'M' --> 'Male',       'F' --> 'Female'
-    Marital:        'S' --> 'Single',     'M' --> 'Married'
-    OccupationType: 'U' --> 'Unemployed', 'S' --> 'Student', 'E' --> 'Employed'
-    I decided not to use look-up tables and follow the above rules.
+    <br/> HouseholdType:  'L' --> 'Landed',     'C' --> 'Condominium', 'H' --> 'HDB'
+    <br/>  Gender:         'M' --> 'Male',       'F' --> 'Female'
+    <br/>  Marital:        'S' --> 'Single',     'M' --> 'Married'
+    <br/>  OccupationType: 'U' --> 'Unemployed', 'S' --> 'Student', 'E' --> 'Employed'
+    <br/>  I decided not to use look-up tables and follow the above rules.
     
 4. All results will come with a housing ID (h_id) or member ID (m_id), which are the primary keys.
 5. Age of members are with respect to the current Sequelize.NOW date.
