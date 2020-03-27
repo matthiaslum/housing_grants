@@ -14,10 +14,10 @@ javascript, mysql, sequelize, node.js, express
 Postman scripts ("TAP.postman_collection.json") have been uploaded too, giving a sample of how to send HTTP requests. 
 
 
-## Sample Data:
+## Sample Database:
 mysql table data has been uploaded. You can load it into mysql workbench to avoid manual entry of data.
 There are two tables. Households and Members.
-Upon running the server, right click the relevant tables in mysql workbench and initialize the data import wizard. 
+If unable to import, the postman scripts for adding households and members in the same file.
 
 ## Assumptions about the assignment.
 
