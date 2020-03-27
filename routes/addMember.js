@@ -61,15 +61,28 @@ router.post('/api/addmember', async function(req, res, next){
         var spouse = req.body.spouse;
         if (spouse != null && typeof(spouse) != 'string'){
             throw ("Incorrect spouse format. Pls type name of spouse");
-        } 
+        }
+        if (spouse != null && name == spouse){
+            throw ("Your spouse name cannot be yourself!");
+        }
+        if (marital_inital == 'M' && spouse == null){
+            throw ("If married, please declare your spouse name!");
+        }  
         var occupation = req.body.occupation;
         var occupation_initial = convertOccupation(occupation);
         if (occupation_initial == null){
             throw ("Incorrect occupation format. Pls type Unemployed, Employed or Student");
         }
         var income = req.body.income;
-        if (typeof(income) != 'number'){
+        if (income != null && typeof(income) != 'number'){
             throw ("Pls input a number for income");
+        }
+        if (income != null && income < 0)
+            throw ("Pls input a non-negative income");
+        if (occupation_initial == 'E'){
+            if (income == null || income <= 0){
+                throw("Please declare your income if you are employed. ");
+            }
         }
         var b_day = req.body.bday;
         if (b_day.isValidDate()!= true){
@@ -79,8 +92,16 @@ router.post('/api/addmember', async function(req, res, next){
         var member_id = await created.m_id;
         console.log("new member number is ... ");
         console.log(member_id);
-        house.total_income += income;
+        if (income != null){
+            house.total_income += income;
+        }
         house.size += 1;
+        let partner = await Member.findOne({where: {h_id: house_number, spouse: name}, transaction});
+        if (partner!= null){
+            if (partner.name != spouse){
+                throw("An existing member in the household says you are the spouse, but you did not delcare it");
+            }
+        }
         if (spouse != null){
             let spouse_entry = await Member.findOne({where: {h_id: house_number, name: spouse}, transaction});
             if (spouse_entry != null){
